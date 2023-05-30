@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About 영역</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="init.css">
+<style>
+/* about_me.css */
+section{
+  font-family:'Poppins', sans-serif;
+  padding:5rem 0;
+}
+section:nth-child(2n){
+  background-color:#f8f8f8;
+}
+section .title{
+  margin-bottom:3rem;
+}
+section .title h4{
+  font-size:1.35rem;
+  color:#ed4848;
+  position:relative;
+}
+section .title h2{
+  font-size:3.5rem; 
+}
+section .title p{
+  font-size:1.15rem;
+}
+/* float 속성 해제 */
+section .about-self::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+/* 본문 너비 절반 지정 & 왼쪽 배치 */
+section .about-self .left{
+  width:50%;
+  float:left;
+}
+/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
+section .about-self .left img{
+  max-width:100%;
+}
+/* 본문 너비 절반 지정 & 오른쪽 배치 */
+section .about-self .right{
+  width:50%;
+  float:left;
+  padding:0 2rem;
+}
+/* 본문 오른쪽 h3 태그의 글자 크기와 여백 지정 */
+section .about-self .right h3{
+  font-size:2.25rem;
+  margin-bottom:1rem;
+}
+/* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
+section .about-self .right h3 strong{
+  color:#ed4848;
+}
+/* 본문 오른쪽 p 태그의 크기와 여백 지정 */
+section .about-self .right p{
+  font-size:1.15rem;
+  margin:1rem 0;
+}
+/* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
+section .about-self .right .social a{
+  font-size:2.5rem;
+  margin-right:0.2rem;
+}
+</style>
 </head>
 <body>
-  <p>Hello, World!</p>
+  <!-- About Me -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="title">
+        <h4>Who Am I</h4>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-self">
+        <div class="left">
+          <img src="https://drive.google.com/uc?export=download&id=1H8Qc0DTkJo3Ro2q_FJ39jXBiVITCWOXI" alt="">
+        </div>
+        <div class="right">
+          <h3>Hello, <strong>I`m Sucoding</strong></h3>
+          <p>I`m Web Publisher And Web Front-End Developer.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.</p>
+          <div class="social">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end About Me -->
 </body>
 </html>
