@@ -1,78 +1,58 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="zxx">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About 영역</title>
+  <title>Final Project</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="init.css">
-<style>
-/* about_me.css */
-section{
-  font-family:'Poppins', sans-serif;
-  padding:5rem 0;
-}
-section:nth-child(2n){
-  background-color:#f8f8f8;
-}
-section .title{
-  margin-bottom:3rem;
-}
-section .title h4{
-  font-size:1.35rem;
-  color:#ed4848;
-  position:relative;
-}
-section .title h2{
-  font-size:3.5rem; 
-}
-section .title p{
-  font-size:1.15rem;
-}
-/* float 속성 해제 */
-section .about-self::after{
-  content:"";
-  clear:both;
-  display:block;
-}
-/* 본문 너비 절반 지정 & 왼쪽 배치 */
-section .about-self .left{
-  width:50%;
-  float:left;
-}
-/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
-section .about-self .left img{
-  max-width:100%;
-}
-/* 본문 너비 절반 지정 & 오른쪽 배치 */
-section .about-self .right{
-  width:50%;
-  float:left;
-  padding:0 2rem;
-}
-/* 본문 오른쪽 h3 태그의 글자 크기와 여백 지정 */
-section .about-self .right h3{
-  font-size:2.25rem;
-  margin-bottom:1rem;
-}
-/* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
-section .about-self .right h3 strong{
-  color:#ed4848;
-}
-/* 본문 오른쪽 p 태그의 크기와 여백 지정 */
-section .about-self .right p{
-  font-size:1.15rem;
-  margin:1rem 0;
-}
-/* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
-section .about-self .right .social a{
-  font-size:2.5rem;
-  margin-right:0.2rem;
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <h1>
+        <button data-animation-scroll="true" data-target="#main">SU</button>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <button data-animation-scroll="true" data-target="#about">
+              About
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#features">
+              Features
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#portfolio">
+              Portfolio
+            </button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#contact">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //end header -->
+  <!-- main -->
+  <main id="main">
+    <div class="container">
+      <h4>Welcome</h4>
+      <h2 class="active">I`M A <span></span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor quas nulla unde ea officiis?</p>
+      <button class="download">DOWNLOAD CV</button>
+      <button class="mouse"><i class="fa-solid fa-computer-mouse"></i></button>
+    </div>
+  </main>
+  <!-- //end Main -->
   <!-- About Me -->
   <section id="about" class="about">
     <div class="container">
@@ -82,7 +62,7 @@ section .about-self .right .social a{
       </div>
       <div class="about-self">
         <div class="left">
-          <img src="https://drive.google.com/uc?export=download&id=1H8Qc0DTkJo3Ro2q_FJ39jXBiVITCWOXI" alt="">
+          <img src="images/me_alone.jpg" alt="">
         </div>
         <div class="right">
           <h3>Hello, <strong>I`m Sucoding</strong></h3>
@@ -109,67 +89,6 @@ section .about-self .right .social a{
     </div>
   </section>
   <!-- end About Me -->
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What I Do</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="init.css">
-<style>
-/* what_i_do.css */
-/* float 속성 해제*/
-section .do-me::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-/* 사각형 크기와 간격, 내부 여백 설정 */
-section .do-me .do-inner{
-  background-color:#fff;
-  width:30%;
-  padding:2rem; 
-  float:left;
-  margin-right:5%;
-  cursor:pointer;
-}
-/* 마지막 사각형의 외부 여백 설정 */
-section .do-me .do-inner:last-child{
-  margin-right:0;
-}
-/* 아이콘 폰트 크기와 색상 */
-section .do-me .do-inner .icon i{
-  font-size:2.5rem;
-  color:#ff6a6a;
-}
-/* HTML5, CSS3, BootStrap v5.0 텍스트 크기와 간격 */
-section .do-me .do-inner .content h3{
-  font-size:2rem;
-  margin:1rem 0;
-}
-/* 사각형 텍스트 크기 */
-section .do-me .do-inner .content p{
-  font-size:1.15rem;
-}
-/* do-inner 클래스에 마우스를 올리면 배경색과 텍스트 색상 변경 */
-section .do-me .do-inner:hover{
-  background-color:lightcoral;
-  color:white;
-}
-/* do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경 */
-section .do-me .do-inner:hover i{
-  color:white;
-}
-/* End what_i_do.css */
-</style>
-</head>
-<body>
   <!-- What I Do -->
   <section id="features" class="do">
     <div class="container">
@@ -209,84 +128,9 @@ section .do-me .do-inner:hover i{
     </div>  
   </section>
   <!-- //end What I Do -->
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>background 영역</title>
-  <link rel="stylesheet" href="init.css">
-<style>
-/* background.css */
-.bg{
-  background:url('https://drive.google.com/uc?export=download&id=1yytg3yXBqhjNmjt1LdHfKT25kWUgP-Fs') center center;
-  background-size:cover;
-  background-attachment:fixed;
-  height:650px;
-}
-/* End background.css */
-</style>
-</head>
-<body>
   <!-- Background -->
   <div class="bg"></div>
   <!-- //end Background-->
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio 영역</title>
-  <link rel="stylesheet" href="init.css">
-<style>
-/* portfolio.css */
-/* clear 속성으로 float 속성값 해제*/
-section.portfolio::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-/* portfolio-inner 사각형 꾸미기 */
-section.portfolio .portfolio-inner{
-  width:30%;
-  margin-right:5%;
-  padding:1rem 1rem 1.5rem 1rem;
-  float:left;
-  background-color:#f8f8f8;
-  border:1px solid #ccc;
-  margin-bottom:3rem;
-}
-/* 3번째마다 margin-right 0 적용 */
-section.portfolio .portfolio-inner:nth-child(3n){
-   margin-right:0;
-}
-/* 이미지의 크기가 부모 요소를 넘지 않도록 100%로 지정 */
-section.portfolio .portfolio-inner img{
-  width:100%;
-  display:block;
-}
-/* strong 태그 색상과 간격 */
-section.portfolio .portfolio-inner strong{
-  color:#ff6a6a;
-  margin:0.5rem 0;
-  display:block;
-}
-/* h3 태그 색상과 간격 */
-section.portfolio .portfolio-inner h3{
-  font-size:1.75rem;
-}
-/* End portfolio.css */
-</style>
-</head>
-<body>
   <!-- PortFolio -->
   <section id="portfolio" class="portfolio">
     <div class="container">
@@ -296,32 +140,32 @@ section.portfolio .portfolio-inner h3{
       </div>
       <div class="portfolio-me">
         <div class="portfolio-inner">
-          <img src="https://drive.google.com/uc?export=download&id=1XaNo_FH_z3esj51saDgj8nE6KZv09ulX" alt="">
+          <img src="images/mock1.png" alt="">
           <strong>BRANDING</strong>
           <h3>Package Design</h3>
         </div>
         <div class="portfolio-inner">
-          <img src="https://drive.google.com/uc?export=download&id=1YS3UdV2i-bPn0N6PENSSPfLhU9Yvc5-4" alt="">
+          <img src="images/mock2.png" alt="">
           <strong>DEVELOPMENT</strong>
           <h3>Tablet App Dev</h3>
         </div>
         <div class="portfolio-inner">
-          <img src="https://drive.google.com/uc?export=download&id=1fsqrrhTeXMSiZ-hEmx8lt3qgQVZSnzcw" alt="">
+          <img src="images/mock3.png" alt="">
           <strong>MARKETING</strong>
           <h3>Coka Cola </h3>
         </div>
         <div class="portfolio-inner">
-          <img src="https://drive.google.com/uc?export=download&id=1TRLm6-n-aUeZeSpDAhrg5BwQnJ1ew1C_" alt="">
+          <img src="images/mock4.png" alt="">
           <strong>APP</strong>
           <h3>FaceBook Clone</h3>
         </div>
         <div class="portfolio-inner">
-          <img src="https://drive.google.com/uc?export=download&id=11dC_TB9Ibt3g5ENFIo-89r6N5zuGj0s3" alt="">
+          <img src="images/mock5.png" alt="">
           <strong>APP</strong>
           <h3>Netflix Clone</h3>
         </div>
         <div class="portfolio-inner">
-          <img src="https://drive.google.com/uc?export=download&id=1Zs36WV_jReR8oOo9aSUGh2g-GteCw7AR" alt="">
+          <img src="images/mock6.png" alt="">
           <strong>WEB</strong>
           <h3>FirmBee Web</h3>
         </div>
@@ -329,105 +173,8 @@ section.portfolio .portfolio-inner h3{
     </div>
   </section>
   <!-- //end PortFolio -->
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact With Me</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-  <link rel="stylesheet" href="init.css">
-<style>
-/* contact_with_me.css */
-
-section.contact .contact-me::after{
-  content:"";
-  display:block;
-  clear:both;
-}
-section.contact .contact-me .left{
-  width:30%;
-  float:left;
-}
-section.contact .contact-me .right{
-  float:left;
-  width:65%;
-  margin-left:5%;
-}
-section.contact .contact-me .left .card{
-  border:1px solid #ccc;
-  padding:1rem;
-  display:flex;
-  align-items:center;
-  margin-bottom:1.25rem;
-}
-section.contact .contact-me .left .card .icon i{
-  font-size:2rem;
-  margin-right:5px;
-}
-section.contact .contact-me .right{ 
-  float:left;
-  width:65%;
-  margin-left:5%;
-  margin-bottom:2rem;
-  border:1px solid #ccc;
-  padding:1rem;
-}
-/* form-group 사이 간격 지정 */
-section.contact .contact-me .right .form-group{
-  margin-bottom:1.25rem;
-}
-/* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
-section.contact .contact-me .right .form-group label{
-  display:block;
-  margin-bottom:0.85rem;
-}
-/* input 요소 꾸미기 */
-section.contact .contact-me .right .form-group input{
-  padding:0.625rem;
-  width:100%;
-  outline:none;
-  border:1px solid #ccc;
-  border-radius:10px;
-}
-/* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */ 
-section.contact .contact-me .right .form-group input:focus{
-  border:1px solid #719ECE;
-  box-shadow:0 0 10px #719ECE;
-}
-/* textarea 요소 꾸미기 */
-section.contact .contact-me .right .form-group textarea{
-  height:300px;
-  width:100%;
-  resize:none;
-  border:1px solid #ccc;
-  border-radius:10px;
-}
-/* textarea 요소에 커서 활성화가 되면 파란색 테두리와 그림자 효과 추가 */
-section.contact .contact-me .right .form-group textarea:focus{
-  outline:none;
-  border:1px solid #719ECE;
-  box-shadow:0 0 10px #719ECE;
-}
-/* 버튼 요소 꾸미기 */
-section.contact .contact-me .right button{
-  width:100%;
-  padding:1rem;
-  background-color:#f78b00;
-  border:none;
-  color:white;
-}
-
-/* End contact_with_me.css */
-</style>
-</head>
-<body>
-  <!-- Contact With Me -->
-  <section id="contact" class="contact">
+   <!-- Contact With Me -->
+   <section id="contact" class="contact">
     <div class="container">
       <div class="title">
         <h4>CONTACT</h4>
@@ -484,34 +231,7 @@ section.contact .contact-me .right button{
     </div>
   </section>
   <!-- end Contact With Me -->
+  <!-- script 태그는 수정하지 않습니다. -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메인 영역</title>
-  <link rel="stylesheet" href="init.css">
-</head>
-<body>
-   <!-- main -->
-   <main id="main">
-    <div class="container">
-      <h4>Welcome</h4>
-      <!-- 13.10.1에서 span 태그의 내용이 비워집니다. -->
-      <h2>I`M A <span></span></h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor quas nulla unde ea officiis?</p>
-      <button class="download">DOWNLOAD CV</button>
-      <button class="mouse"><i class="fa-solid fa-computer-mouse"></i></button>
-    </div>
-  </main>
-  <!-- //end Main -->
-</body>
-</html>
-
-<script src="script.js"></script>
