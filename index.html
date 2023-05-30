@@ -211,3 +211,278 @@ section .do-me .do-inner:hover i{
   <!-- //end What I Do -->
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background 영역</title>
+  <link rel="stylesheet" href="init.css">
+<style>
+/* background.css */
+.bg{
+  background:url('https://drive.google.com/uc?export=download&id=1yytg3yXBqhjNmjt1LdHfKT25kWUgP-Fs') center center;
+  background-size:cover;
+  background-attachment:fixed;
+  height:650px;
+}
+/* End background.css */
+</style>
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg"></div>
+  <!-- //end Background-->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio 영역</title>
+  <link rel="stylesheet" href="init.css">
+<style>
+/* portfolio.css */
+/* clear 속성으로 float 속성값 해제*/
+section.portfolio::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/* portfolio-inner 사각형 꾸미기 */
+section.portfolio .portfolio-inner{
+  width:30%;
+  margin-right:5%;
+  padding:1rem 1rem 1.5rem 1rem;
+  float:left;
+  background-color:#f8f8f8;
+  border:1px solid #ccc;
+  margin-bottom:3rem;
+}
+/* 3번째마다 margin-right 0 적용 */
+section.portfolio .portfolio-inner:nth-child(3n){
+   margin-right:0;
+}
+/* 이미지의 크기가 부모 요소를 넘지 않도록 100%로 지정 */
+section.portfolio .portfolio-inner img{
+  width:100%;
+  display:block;
+}
+/* strong 태그 색상과 간격 */
+section.portfolio .portfolio-inner strong{
+  color:#ff6a6a;
+  margin:0.5rem 0;
+  display:block;
+}
+/* h3 태그 색상과 간격 */
+section.portfolio .portfolio-inner h3{
+  font-size:1.75rem;
+}
+/* End portfolio.css */
+</style>
+</head>
+<body>
+  <!-- PortFolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="title">
+        <h4>PORTFOLIOBACK</h4>
+        <h2>PortFolio</h2>
+      </div>
+      <div class="portfolio-me">
+        <div class="portfolio-inner">
+          <img src="https://drive.google.com/uc?export=download&id=1XaNo_FH_z3esj51saDgj8nE6KZv09ulX" alt="">
+          <strong>BRANDING</strong>
+          <h3>Package Design</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="https://drive.google.com/uc?export=download&id=1YS3UdV2i-bPn0N6PENSSPfLhU9Yvc5-4" alt="">
+          <strong>DEVELOPMENT</strong>
+          <h3>Tablet App Dev</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="https://drive.google.com/uc?export=download&id=1fsqrrhTeXMSiZ-hEmx8lt3qgQVZSnzcw" alt="">
+          <strong>MARKETING</strong>
+          <h3>Coka Cola </h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="https://drive.google.com/uc?export=download&id=1TRLm6-n-aUeZeSpDAhrg5BwQnJ1ew1C_" alt="">
+          <strong>APP</strong>
+          <h3>FaceBook Clone</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="https://drive.google.com/uc?export=download&id=11dC_TB9Ibt3g5ENFIo-89r6N5zuGj0s3" alt="">
+          <strong>APP</strong>
+          <h3>Netflix Clone</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="https://drive.google.com/uc?export=download&id=1Zs36WV_jReR8oOo9aSUGh2g-GteCw7AR" alt="">
+          <strong>WEB</strong>
+          <h3>FirmBee Web</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //end PortFolio -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact With Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link rel="stylesheet" href="init.css">
+<style>
+/* contact_with_me.css */
+
+section.contact .contact-me::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+section.contact .contact-me .left{
+  width:30%;
+  float:left;
+}
+section.contact .contact-me .right{
+  float:left;
+  width:65%;
+  margin-left:5%;
+}
+section.contact .contact-me .left .card{
+  border:1px solid #ccc;
+  padding:1rem;
+  display:flex;
+  align-items:center;
+  margin-bottom:1.25rem;
+}
+section.contact .contact-me .left .card .icon i{
+  font-size:2rem;
+  margin-right:5px;
+}
+section.contact .contact-me .right{ 
+  float:left;
+  width:65%;
+  margin-left:5%;
+  margin-bottom:2rem;
+  border:1px solid #ccc;
+  padding:1rem;
+}
+/* form-group 사이 간격 지정 */
+section.contact .contact-me .right .form-group{
+  margin-bottom:1.25rem;
+}
+/* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
+section.contact .contact-me .right .form-group label{
+  display:block;
+  margin-bottom:0.85rem;
+}
+/* input 요소 꾸미기 */
+section.contact .contact-me .right .form-group input{
+  padding:0.625rem;
+  width:100%;
+  outline:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+/* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */ 
+section.contact .contact-me .right .form-group input:focus{
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+/* textarea 요소 꾸미기 */
+section.contact .contact-me .right .form-group textarea{
+  height:300px;
+  width:100%;
+  resize:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+/* textarea 요소에 커서 활성화가 되면 파란색 테두리와 그림자 효과 추가 */
+section.contact .contact-me .right .form-group textarea:focus{
+  outline:none;
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+/* 버튼 요소 꾸미기 */
+section.contact .contact-me .right button{
+  width:100%;
+  padding:1rem;
+  background-color:#f78b00;
+  border:none;
+  color:white;
+}
+
+/* End contact_with_me.css */
+</style>
+</head>
+<body>
+  <!-- Contact With Me -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="title">
+        <h4>CONTACT</h4>
+        <h2>Contact With Me</h2>
+      </div>
+      <div class="contact-me">
+        <div class="left">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="info-text">
+              <h3>phone</h3>
+              <p>010-2222-1111</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <div class="info-text">
+              <h3>email</h3>
+              <p>sucoding@naver.com</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <div class="info-text">
+              <h3>address</h3>
+              <p>Samseong-ro, Gangnam-gu, Seoul, Republic of Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="#">
+            <div class="form-group">
+              <label for="name">name</label>
+              <input type="text" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="text" id="email">
+            </div>
+            <div class="form-group">
+              <label for="msg">message</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <button>send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end Contact With Me -->
+</body>
+</html>
